@@ -9,6 +9,12 @@
         margin-top: 44px;
         text-align: center;
 
+        @media( max-width:768px) {
+            grid-template-columns: 1fr 1fr ;
+            
+
+        }
+
         &--is-active{
             display: grid;
         }
@@ -23,6 +29,11 @@
     &__tabs{
         display: flex;
         justify-content: center;
+        @media( max-width:768px) {
+            white-space: nowrap;
+            overflow-y: scroll;
+            padding-left: 9px;
+        }
         &__button{
             background-color: transparent;
             font-size: 20px;
@@ -32,7 +43,11 @@
             padding-bottom: 5px;
             text-transform: uppercase;
             margin: 0 1vw;
-            border-bottom: 5px solid transparent;         
+            border-bottom: 5px solid transparent;  
+            
+            @media( max-width:768px) {
+                font-size: 16px;
+            }
 
             &--is-active{
                 border-color: variaveis.$corTextoTextoSecundario;
